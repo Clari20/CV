@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="es-ar" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Proyecto</title>
+
+    <link rel="stylesheet" type="text/css" href="diseño.css" />
+
+    <!---Foto titular--->
+    <link rel="icon" type="image/icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQJ0Gqz5OGyHIyE5cfxxkgU3GsvQIgb-Ibzw&usqp=CAU" />
+
+</head>
+
+<body>
+
+    <h1> Mi CV </h1>
+
+    <h3>Hola!! Este es mi Curriculum Vitae</h3>
+
+    <!---INFO -->
+    <div id="info">
+        <p id="Nombre">Nombre: Clari </p>
+        <p id="Apellido">Apellido: Lopez</p>
+        <p id="Edad">Edad: 24</p>
+
+        <p id="Fecha">Fecha de nacimiento: 20/11/1998</p>
+
+        <p id="Nacionalidad">Nacionalidad: Argentina</p>
+        <p id="Provincia">Provincia: Córdoba, Córdoba</p>
+    </div>
+    <!--IMAGEN DE PERFIL-->
+
+    <img id="foto perfil"
+        src="https://lh3.googleusercontent.com/DfzClYFdh5tW1xMkIue80yRSzWZehlxAcPxOOBtzy8rPo0OpYcdYxvfEQHXBPMBSTgs8-_kygxu1K5vZiiGg73Ux0PoJcVivAQWmiTL1nSpUneyR3uvBfBeWqEUT9Aac5pHmBlEtFnyEXi9GVJWdPd2952LnFzk1F5utXzDmNQvISfhyAX2HQLz8ekco4IMjy-N5gjXuvFPQMF-5ZbQcU0kBYa_jwug5SF3pnN5MCvzhSabaVWb8PelQlNG2Szrc3zl1t1yItcVxuc5tY46OjKK5OnWxoET3EJF2ocAJ34xpnQkEkbfPqXRAkoDiBqopSzG0dNiHJ3_yNWutgXcTcEu7Hv-AcOnfMYKdJSweDIQYwNxZNrM6ytd8ith9S63HjSrgHgDuNVocRizUDQfB2wYH0gpj_5FBr8tD1P2JOdo4X0nlgv5dnTVH65yFHQiultWcQakzcxUHPUxN8q1Rqm18kiMAp62dVdu5y2pReH70JUHnuRjVScDnsz_JtlqyxdnErq8jfFnvanOr4sJLPmrT81vJcHmYyHPK6lnULzAw4tdgkISLAXNmzj8QJdo5xwpAOAplvVVPyTWCm7r8hVq7VaNRsKMfSDGaACNlqYdodzAaOoL0xm-4vicOH1qtODAYJirTRVBQ93te4rp4O1SsML0cLsGTWqzwgxjvcNC_B6fuWRNVJjtwRyIixklUArehqFNVy-oRV2sabiNWyZc_P3o6FsgrtuSVcp4UhAjVwPdDkeOnu4Xo03sGIpyi_mB_cU4EB_1izedkPeLOOx6LgK4TJzEW8BC9TK5tZA2RbCpbczxkLGP3aykbzdg4waVaiHQtzHhcxgxXeYBymfcLsE3TNOorGpMtbQKDypeFK68c3kQXE_u0sipyWR1JwIhH-zt0l-1vA7p9vCBwW41qqzMIpiVuNEtDXPw7udtZ8wprUKDXIXX3thJOp8f4a8jWP0h-rS54CVUV=w644-h711-no?authuser=1"
+        alt="Foto de perfil" />
+
+
+
+
+    <!---TEXTO INTRODUCTORIO-->
+
+    <p id="texto-yo">Me considero una persona ordenada, creativa, amable y emprendedora
+        Me gusta mucho aprender e informarme constartemente
+        Estoy totalmente predispuesta a desarrollar nuevas habilidades y desempeñarme en nuevos rubros, siempre dando lo
+        mejor de mi
+    </p>
+
+    <!---HABILIDADES-->
+
+    <div id="habilidades">
+        <p>Algunos de mis aspectos que mas resaltan son:</p>
+        <p> - Capacidad de trabajar en equipo</p>
+        <p> - Adaptabilidad</p>
+        <p> - Pensamiento lógico y critico</p>
+        <p> - Autonomia</p>
+        <p> - Capacidad en resolución de conflictos</p>
+    </div>
+
+    <!---EXPERIENCIA LABORAL-->
+
+    <div id="experiencia">
+        <h5>EXPERIENCIA LABORAL</h5>
+        <p> - "Escuela Químicos Argentinos" - Tétulo: técnica química (egreso en 2016)</p>
+        <p> - "Universidad Nacional de Cordoba" - Título: técnica bioquímica (2017-2020)</p>
+        <p> - Trabajo como ayudante de laboratorio (2019-2020)</p>
+        <p> - Curso de programación (2023)</p>
+    </div>
+
+
+
+
+
+    <!---INFO CONTACTO-->
+    <div id="info-contacto">
+        <h5>CONTACTO</h5>
+        <p id="Celular">Celular: +54 351 3085203</p>
+        <p id="Mail">Mail: C.lopez@gmail.com</p>
+    </div>
+
+
+    <!---DISPONIBILIDAD-->
+    <div id="Disponibilidad">
+        <h5>DISPONIBILIDAD</h5>
+        <p id="LyV">Lunes a Viernes: de 8 a 14hs</p>
+        <p id="SyD">Sabado y Domingo: de 13 a 20hs</p>
+    </div>
+
+    <!--HACER LOS BOTONES-->
+
+
+
+    <button id="geo" onclick="getLocation()">Click</button>
+
+    <p id="txt">Da "Click" en el boton para mostrar tus coordenadas geograficas!!</p>
+
+    <script>
+        const x = document.getElementById("txt");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation no es soportada por el navegador.";
+            }
+        }
+
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+        }
+    </script>
+
+
+</body>
